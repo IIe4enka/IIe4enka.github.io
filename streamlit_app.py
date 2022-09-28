@@ -13,7 +13,7 @@ def get_data() -> pd.DataFrame:
 df = get_data()
 
 st.markdown("### First chart")
-fig2 = px.histogram(data_frame=df, x="Учебный")
+fig2 = px.histogram(data_frame=df, x=df.columns[3])
 st.write(fig2)
 
 st.markdown("### Detailed Data View")
