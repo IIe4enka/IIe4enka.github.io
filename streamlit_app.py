@@ -12,12 +12,9 @@ def get_data() -> pd.DataFrame:
 
 df = get_data()
 
-fig_col1 = st.columns(1)
-   
-with fig_col1:
-    st.markdown("### Second Chart")
-    fig2 = px.histogram(data_frame=df, x="Учебный год")
-    st.write(fig2)
+st.markdown("### First chart")
+fig2 = px.histogram(data_frame=df, x="Учебный")
+st.write(fig2)
 
 st.markdown("### Detailed Data View")
 st.dataframe(df)
