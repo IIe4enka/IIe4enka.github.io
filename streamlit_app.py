@@ -7,6 +7,7 @@ import streamlit as st  # 🎈 data web app development
 
 dataset_url = "projectdata.csv"
 
+# NEW DATA
 def get_data() -> pd.DataFrame:
     return pd.read_csv(dataset_url)
 
